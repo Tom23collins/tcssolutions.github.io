@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Tom Collins</title>
+		<link rel="preload" href="./scene.json" as="fetch">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class='container'>
+			<canvas id="canvas3d"></canvas>
+			
+			<a class="spline-watermark" href="https://spline.design"><img src="https://app.spline.design/_assets/_icons/icon_favicon32x32.png"></a>
+					
+		</div>
+		<script type="module">
+			import { Application } from './runtime.js';
+			const app = new Application();
+			app.load('./scene.json');
+		</script>
+	</body>
+</html>
