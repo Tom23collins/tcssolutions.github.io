@@ -1,3 +1,7 @@
+body{
+    cursor: url("assets/cursor.svg"), auto;
+}
+
 a{
     font-family: "Roboto Mono";
     font-style: normal;
@@ -6,6 +10,7 @@ a{
     color: #000;
     text-decoration: none;
     opacity: 1;
+    cursor: url("assets/cursor-hover.svg"), auto;
 }
 
 a:hover{
@@ -37,13 +42,13 @@ a:hover{
 
 /* Hero */
 .name-text-col{
-    height: 20%;
     display: flex;
     justify-content: center;
 }
 
 #canvas3d{
-    width: 90% !important;
+    cursor: url("assets/cursor-hover.svg"), auto;
+    width: 100% !important;
     height: auto !important;
 }
 
@@ -64,3 +69,12 @@ a:hover{
     background: blue;
 }
 
+
+.contact-container{
+    background: url(assets/contact-background.svg) no-repeat;
+    background-size: contain;
+}
+
+.contact-col{
+    height: 500px;
+}
