@@ -4,7 +4,7 @@ body {
 
 .content {
     position:relative;
-    height:20vh;
+    height:15vh;
     text-align:center;
     background-color: #a2d5f2;
 }
@@ -83,12 +83,12 @@ a:hover{
 }
 
 .footer-text{
-    margin-top: 180px;
+    margin-top: 80px;
     color: #FFF;
 }
 
 .footer-logo{
-    width: 60px;
+    width: 50px;
     margin-bottom: 10px;
 }
 
