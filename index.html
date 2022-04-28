@@ -39,7 +39,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<!-- Header Section -->
+
+	<!-- Header Container -->
 	<div class="header">
 		<div class="container">
 			<div class="row">
@@ -47,16 +48,60 @@
 					<h1>Tom Collins’ Portfolio</h1>
 				</div>
 				<div class="col-4">
-					<a href="#" class="contact-button">Email Me! <i class="fa-solid fa-envelope"></i></a>
+					<a href="#" class="contact-button anim-explode-container">Email Me! <i class="fa-solid fa-envelope"></i></a>
 				</div>
 			</div>
 		</div>
 	</div>
-    <!-- Footer Section -->
-	<!--Content before waves-->
-		
-		<!--Waves Container-->
+	<!-- Header end -->
+
+	<!-- Projects Container -->
+	<div class="projects-container">
+		<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			<div class="carousel-inner">
+			  <div class="carousel-item active" data-bs-interval="10000">
+				<div class="container">
+					<div class="row">
+						<div class="col-6 col-left">
+							<h2>Alchemy Game</h2>
+							<video width="320" height="240" autoplay muted loop>
+								<source src="assets/Alchemy-Game-Demo.mp4" type="video/mp4">
+							  Your browser does not support the video tag.
+							</video>
+						</div>	
+						<div class="col-6 col-right">
+							<p class="project-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+							<a href="https://github.com/Tom23collins/A-Level-Project" target="_blank"  class="code-button">Code <i class="fa-brands fa-github"></i></a>
+							<a href="#" class="coursework-button">Coursework</a>
+						</div>	
+					</div>
+				</div>
+			  </div>
+			  <!-- <div class="carousel-item" data-bs-interval="2000">
+				<h5>Second slide label</h5>
+			  </div>
+			  <div class="carousel-item">
+				<h5>Third slide label</h5>
+			  </div> -->
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		<div class="content flex carousel-number">
+			<p id="carousel-number">1/4</p>
+		</div>
+	</div>
+	<!-- Projects end -->
+
+    <!-- Footer Container -->
         <div class="fixed-bottom">
+			<!--Waves Container-->
 			<div>
 				<svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 				viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -72,13 +117,15 @@
 				</svg>
 			</div>
 			<!--Waves end-->
-			<!--Content starts-->
-			<div class="content flex">
+			<div class="content flex footer-div">
 				<p class="footer-text"><img src="assets/Logo.png" alt="Tom Collins Logo" class="footer-logo"><br>tom23collins.com</p>
 			</div>
 		</div>
+	<!-- Footer end -->
+
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </body>
 </html>

@@ -4,9 +4,7 @@ body {
 
 .content {
     position:relative;
-    height:15vh;
     text-align:center;
-    background-color: #a2d5f2;
 }
   
 .flex {
@@ -29,6 +27,12 @@ h1 {
     margin-bottom: 0%;
 }
 
+h2{
+    font-weight: 500;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
 p{
     font-weight: 300;
     font-size: 24px;
@@ -40,7 +44,6 @@ a {
     color: #FFF;
     text-decoration: none;
     border-radius: 50px;
-    padding: 15px 30px;
 
     font-weight: 600;
     font-size: 36px;
@@ -53,10 +56,11 @@ a:hover{
 
 /* Header Section */
 .header {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .contact-button{
+    padding: 15px 30px;
     float: right;
     background: #8EF6E4;
     box-shadow: 0px 4px 8px rgba(142, 246, 228, 0.3);
@@ -72,6 +76,57 @@ a:hover{
     margin-left: 10px;
 }
 
+/* Projects Section */
+.projects-container{
+  padding-top: 150px;
+}
+
+.col-left{
+  padding-right: 50px;
+}
+
+.col-right{
+  padding-left: 50px;
+}
+
+.project-text{
+  margin-bottom: 50px;
+}
+
+.carousel-number{
+  margin-top: 50px;
+}
+
+/* Alchemy Game */
+video{
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.coursework-button{
+  padding: 5px 30px;
+  margin-right: 100px;
+  float: right;
+  background: #D59BF6;
+  box-shadow: 0px 4px 8px rgba(213, 155, 246, 0.3);
+}
+
+.coursework-button:hover {
+  box-shadow: 0px 4px 8px rgba(213, 155, 246, 0.8);
+}
+
+.code-button{
+  background: #EDB1F1;
+  padding: 5px 30px;
+  float: right;
+  box-shadow: 0px 4px 8px rgba(237, 177, 241, 0.3);
+}
+
+.code-button:hover {
+  box-shadow: 0px 4px 8px rgba(237, 177, 241, 0.8);
+}
+
 /* Footer Section */
 .waves {
   position:relative;
@@ -80,6 +135,11 @@ a:hover{
   margin-bottom:-7px; /*Fix for safari gap*/
   min-height:100px;
   max-height:150px;
+}
+
+.footer-div{
+  height:15vh;
+  background-color: #a2d5f2;
 }
 
 .footer-text{
