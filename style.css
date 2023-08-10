@@ -4,11 +4,17 @@ body{
    background-color: #E8E0D3;
 }
 
+/* Fonts Start */
+h1{
+    font-family: 'Outfit';
+    font-weight: 400;
+    color: #000;
+}
+
 h3{
     font-family: 'Outfit';
     font-weight: 400;
     color: #000;
-    font-size: xx-large;
 }
 
 p{
@@ -18,23 +24,67 @@ p{
     font-size: x-large;
 }
 
+/* Fonts End */
+
+
+/* Nav Start */
+
+.nav{
+    margin-bottom: 100px;
+}
+
 header img{
     width: 50%;
 }
+
+.contact-button{
+    background-color: #283382 !important;
+    border-radius: 0px !important;
+}
+
+.contact-button h3{
+    color: #E8E0D3;
+    margin-bottom: 0px;
+}
+
+/* Nav End */
+
+/* Hero Start */
+
+.hero{
+    margin-bottom: 100px;
+}
+
+/* Hero End */
+
+/* Services Start */
 
 .services{
     background-image: url("assets/decorations/Flower.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
+    margin-bottom: 100px;
 }
+
+.services .col-md-6{
+    padding: 30px;
+}
+
+/* Services End */
+
+
+/* Processes Start */
 
 .process{
     background-image: url("assets/decorations/Flower2.svg");
     background-repeat: no-repeat;
     background-position: left;
+    margin-bottom: 100px;
 }
 
-.services .col-6{
-    padding: 30px;
+.vertical-text{
+    writing-mode: vertical-rl;
 }
+
+/* Processes End */
