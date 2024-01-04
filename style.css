@@ -1,75 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
 
 body{
-   background-color: #E8E0D3;
+   background-color: #FFFFFF;
 }
 
 /* Fonts Start */
 h1{
-    font-family: 'Outfit';
-    font-weight: 400;
-    color: #000;
+    font-family: 'Inter';
+    font-weight: 600;
 }
 
-h3{
-    font-family: 'Outfit';
+h4{
+    font-family: 'Inter';
     font-weight: 400;
-    color: #000;
 }
 
 p{
-    font-family: 'Outfit';
+    font-family: 'Inter';
     font-weight: 300;
-    color: #000;
-    font-size: x-large;
 }
 
 /* Fonts End */
 
 
 /* Nav Start */
-
-.nav{
-    margin-bottom: 100px;
+.nav img{
+    height: 60px;
+    
 }
 
-header img{
-    width: 50%;
+.nav-link h4{
+    color: #000000;
+    padding-top: 8px;
 }
 
-.contact-button{
-    background-color: #283382 !important;
-    border-radius: 0px !important;
+.current-page h4{
+    color: #E14141;
 }
 
-.contact-button h3{
-    color: #E8E0D3;
+.nav-link h4:hover{
+    color: #3729D5;
+    text-decoration: underline;
+}
+
+.contact h4{
+    border-style: solid !important;
+    border: #3729D5;
+    border-width: 3px;
+    border-radius: 10px !important;
+    color: #E14141;
+    padding: 5px 10px;
     margin-bottom: 0px;
 }
+
+
 
 /* Nav End */
 
 /* Hero Start */
 
 .hero{
-    margin-bottom: 100px;
+    background-image: url("assets/Images/Hero_Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    color: #FFFFFF;
+}
+
+.hero h1{
+    margin-top: 200px;
 }
 
 /* Hero End */
 
 /* Services Start */
 
-.services{
-    background-image: url("assets/decorations/Flower.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    margin-bottom: 100px;
-}
-
-.services .col-md-6{
-    padding: 30px;
-}
 
 /* Services End */
 
@@ -87,4 +94,36 @@ header img{
     writing-mode: vertical-rl;
 }
 
-/* Processes End */
+/* Footer Img*/
+
+.pier-img{
+    background-image: url("assets/Images/Footer_Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+/* Footer Links */
+
+.footer-links{
+    background-color: #2E2878;
+}
+
+.footer-links p, h5{
+    color: #FFFFFF;
+}
+
+/* Footer*/
+
+.footer{
+    background-color: #E6E6E6;
+    height: 50px;
+}
+
+.footer p{
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
