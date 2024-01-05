@@ -1,33 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
 
-
-body{
-   background-color: #FFFFFF;
-}
-
-/* Fonts Start */
-h1{
+/* Global */
+h1, h2{
     font-family: 'Inter';
     font-weight: 600;
 }
 
-h4{
+h4, p{
     font-family: 'Inter';
     font-weight: 400;
 }
 
-p{
-    font-family: 'Inter';
-    font-weight: 300;
+button{
+    background-color: #FFFFFF;
+    border-style: solid !important;
+    border: #3729D5;
+    border-width: 3px;
+    border-radius: 10px !important;
+    color: #E70000;
+    padding: 5px 10px;
+    margin-bottom: 0px;
 }
 
-/* Fonts End */
+button h4{
+    margin-bottom: 0px;
+}
 
-
-/* Nav Start */
+/* Nav */
 .nav img{
-    height: 60px;
-    
+    height: 80px;
 }
 
 .nav-link h4{
@@ -36,7 +37,7 @@ p{
 }
 
 .current-page h4{
-    color: #E14141;
+    color: #E70000;
 }
 
 .nav-link h4:hover{
@@ -49,17 +50,12 @@ p{
     border: #3729D5;
     border-width: 3px;
     border-radius: 10px !important;
-    color: #E14141;
+    color: #E70000;
     padding: 5px 10px;
     margin-bottom: 0px;
 }
 
-
-
-/* Nav End */
-
-/* Hero Start */
-
+/* Hero */
 .hero{
     background-image: url("assets/Images/Hero_Background.png");
     background-repeat: no-repeat;
@@ -73,29 +69,29 @@ p{
     margin-top: 200px;
 }
 
-/* Hero End */
-
-/* Services Start */
-
-
-/* Services End */
-
-
-/* Processes Start */
-
-.process{
-    background-image: url("assets/decorations/Flower2.svg");
-    background-repeat: no-repeat;
-    background-position: left;
-    margin-bottom: 100px;
+/* Services */
+.services a{
+    text-decoration: none;
 }
 
-.vertical-text{
-    writing-mode: vertical-rl;
+.service-link-1{
+    background-color: #2E2878;
+    color: #FFFFFF;
 }
+
+.service-link-2{
+    background-color: #E70000;
+    color: #FFFFFF;
+}
+
+.service-link-3{
+    background-color: #E6E6E6;
+    color: #000000;
+    border-radius: 0px 0px 10px 10px;
+}
+
 
 /* Footer Img*/
-
 .pier-img{
     background-image: url("assets/Images/Footer_Background.png");
     background-repeat: no-repeat;
