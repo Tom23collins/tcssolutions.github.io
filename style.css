@@ -26,6 +26,12 @@ button h4{
     margin-bottom: 0px;
 }
 
+hr{
+    height:3px;
+    background-color: #2E2878;
+    opacity: 100%;
+}
+
 /* Nav */
 .nav img{
     height: 80px;
@@ -70,6 +76,14 @@ button h4{
 }
 
 /* Services */
+.services img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border: #2E2878;
+    border-width: 3px 3px 0px 3px;
+    border-style: solid;
+}
+
 .services a{
     text-decoration: none;
 }
@@ -82,12 +96,18 @@ button h4{
 .service-link-2{
     background-color: #E70000;
     color: #FFFFFF;
+    border: #2E2878;
+    border-width: 0px 3px;
+    border-style: solid;
 }
 
 .service-link-3{
     background-color: #E6E6E6;
     color: #000000;
     border-radius: 0px 0px 10px 10px;
+    border: #2E2878;
+    border-width: 0px 3px 3px 3px;
+    border-style: solid;
 }
 
 
