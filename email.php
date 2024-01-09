@@ -1,32 +1,37 @@
 <?php
-if(isset($_POST['submit'])){
-	//Get form data
-	$name = $_POST['name']; 
-	$email = $_POST['email'];
-	$service = $_Post['service'];
-	$message = $_POST['message'];
-	
-    //Email address validation and display error message
-	$email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
- 
-    if (!preg_match($email_exp, $email)) {
-        echo '<br><span style="color:red;">The Email address you entered is not valid.</span>';
-		exit;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = $_POST["firstname"];
+    $email = $_POST["email"];
+    $service = $_POST["service"];
+    $message = $_POST["Message"];
+
+    // Create email content
+    $subject = "New Inquiry from $name";
+    $body = "Name: $name\n";
+    $body .= "Email: $email\n";
+    $body .= "Service: $service\n";
+    $body .= "Message:\n$message";
+
+    // Set additional headers
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "Content-Type: text/plain; charset=utf-8\r\n";
+
+    // Replace your_email@example.com with the actual email address where you want to receive the form submissions
+    $to = "your_email@example.com";
+
+    // Send email
+    $success = mail($to, $subject, $body, $headers);
+
+    if ($success) {
+        echo "Thank you for your inquiry. We will get back to you soon.";
+    } else {
+        echo "Oops! Something went wrong. Please try again later.";
     }
-	
-	$to = "tom23collins@gmail.com";  //recipient email address
-	$subject = $service;  //Subject of the email
-	
-	//Message content to send in an email
-	$message = "Name: ".$name."<br>Email: ".$email."<br> Message".$message;
-	
-	//Email headers
-	$headers = "From: yourname@yourdomain.com"."\r\n";
-	$headers = "CC: someone@example.com";
-	$headers .= "Reply-To:".$email."\r\n";
-	
-	//Send email 
-	mail($to, $subject, $message, $headers);
-	or die("Error!");
+} else {
+    // Redirect to the form page if accessed directly
+    header("Location: your_form_page.html");
+    exit();
 }
 ?>
