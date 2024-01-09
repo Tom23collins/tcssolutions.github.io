@@ -33,7 +33,7 @@ hr{
 
 .nav-link h4:hover{
     color: #3729D5;
-    text-decoration: underline;
+    margin-top: -5px;
 }
 
 .contact h4{
