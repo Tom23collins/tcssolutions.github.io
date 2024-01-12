@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Outfit:wght@300;400;600&display=swap');
+
+.blogs h1{
+    text-align: center;
+    color: #E14141;
+}
+
+.blogs h5{
+    color: #000000;
+    font-weight: 600;
+}
+
+.blogs img{
+    border-radius: 10px;
+}
+
+.blogs a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.blog-container{
+    border: 3px solid #3729D5;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.blog-links{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.blog-links p{
+    text-align: right;
+    margin-top: -20px;
+}
